@@ -1,20 +1,20 @@
 class composite{
 	public static void main(String[] args){
-		int arr[] = {16, 18, 27, 16, 23, 21, 19};
+		int a = 12, b = 19;
 		int coun = 0;
-		int pri = 0;
-		for(int i=0;i<arr.length;i++){
-			pri = 0;
-			for(int j=2;j<arr[i];j++){
-				if(arr[i]%j==0){
-					pri = 1;
+		for(int i=a; i<=19;i++){
+			for(int j=2;j<i;j++){
+				if(i%j==0){
+					coun=1;
 					break;
 				}
-			}
-			if(pri==1){
-				coun++;
-			}
+				else{
+					coun = 0;
+				}
 		}
-		System.out.print("No of composite numbers = "+coun);
+		if(coun==0){
+			System.out.print(i+" ");
+		}
 	}
+}
 }

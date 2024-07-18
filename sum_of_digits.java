@@ -1,12 +1,12 @@
-class reverse{
+class sum_of_digits{
 	public static void main(String[] args){
-		int num = 1234;
-		int rev = 0;
+		int num =  123;
+		int sum = 0;
 		while(num!=0){
 			int digit = num%10;
-			rev = rev*10 + digit;
+			sum+=digit;
 			num/=10;
 		}
-		System.out.print(rev);	
+		System.out.print(sum);
 	}
 }

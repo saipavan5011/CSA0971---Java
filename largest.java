@@ -1,16 +1,14 @@
 class largest{
-	public static void main(String[] args){
-		int arr[] = {14, 67, 48, 23, 5, 62};
-		int n=4;
-		for(int i=0;i<arr.length-1;i++){
-			for(int j=i+1;j<arr.length;j++){
-				if(arr[j]>arr[i]){
-					int temp = arr[i];
-					arr[i] = arr[j];
-					arr[j] = temp;
-				}
-			}
+	public static void main(String arg[]){
+		int a=2,b=3;
+		if(a>b){
+			System.out.print("A is largest");
 		}
-		System.out.print(arr[n-1]);
+		else if(a==b){
+			System.out.print("Both are same");
+		}
+		else{
+			System.out.print("B is largest");
+		}
 	}
 }
