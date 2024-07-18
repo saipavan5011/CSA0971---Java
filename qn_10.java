@@ -1,0 +1,1 @@
+//break : It terminates the loop and transfers control to the next statement after the loop

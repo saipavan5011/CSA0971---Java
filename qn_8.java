@@ -1,0 +1,1 @@
+//static : The method can be accessed without creating an object of the class
